@@ -1,4 +1,4 @@
-package iut.sae.algo;
+package iut.sae;
 
 import org.junit.Test;
 import junit.framework.TestCase;

@@ -1,4 +1,4 @@
-package iut.sae.algo;
+package iut.sae;
 
 public class AlgoException extends Exception{
     public AlgoException() {
