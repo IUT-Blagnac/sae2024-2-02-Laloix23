@@ -164,9 +164,12 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie 
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité
-| 2    | link:src/main/java/exercice/Exercice2.java[meilleur C]    | C     | Efficacité
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/SAEALGO/src/main/java/iut/sae/Algo.java[meilleur java]| Java     | Simplicité
+| 2    | link:src/python/algo.py[meilleur Python]    | Python     | Simplicité
+| 3  | link:src/python/algo.py[meilleur Python]    | Python       | Efficacité  
+| 4    | link:src/SAEALGO/src/main/java/iut/sae/Algo.java[meilleur java]| Java     |  Efficacité 
+| 5  | link:src/python/algo.py[meilleur Python]    | Python       | Sobriété numérique
+| 6    | link:src/SAEALGO/src/main/java/iut/sae/Algo.java[meilleur java]| Java     | Sobriété numérique
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 21 juin 2024** à minuit)
