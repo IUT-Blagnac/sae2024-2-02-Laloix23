@@ -57,7 +57,7 @@ Les fonctions sont bien séparées et de taille raisonnable.
 Les noms des variables sont très pertinants.
 
 *Grade qualité Codacy :* 5/6 
-Codacy à évalué le grade de qualité du code en grade B.
+Codacy a évalué le grade de qualité du code en grade B.
 
 *Score Total pour Simplicité:* 28/31
 
@@ -78,7 +78,10 @@ Les fonctions sont bien séparées mais beaucoup de lignes qui pourrait etre sim
 *Nom de variable pertinant :* 3/5 
 Les noms des variables sont mélangés entre le français et l'anglais.
 
-*Score Total pour Simplicité:* 16/25
+*Grade qualité Codacy :* 6/6 
+Codacy a évalué le grade de qualité du code en grade A.
+
+*Score Total pour Simplicité:* 22/31
 
 === Algorithme 3 : 64simplicite.java en Java
 
@@ -127,9 +130,9 @@ Les noms des variables sont très pertinant.
 
 |=== 
 | **Algorithme**                          | **Rang**   | **Score Simplicité (0-20)** 
-| 30simplicite.py en Python |    1er     | 23
+| 30simplicite.py en Python |    1er     | 28
 | 12simplicite.py en Python | 2ème        | 20
-| 23simplicite.java en Java | 3ème       | 16
+| 23simplicite.java en Java | 3ème       | 22
 | 64simplicite.java en Java | 4ème       | 13,5
 | 09simplicite.java en Java | exclue | 0
 |===
