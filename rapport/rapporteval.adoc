@@ -3,6 +3,7 @@
 :toc-title: Sommaire
 
 *Nom du Projet:* Classement des Algorithmes selon la Simplicité
+
 *Date:* 21 Juin 2024
 
 
@@ -10,7 +11,6 @@
 
 J'ai utilisé les outils suivants pour évaluer les algorithmes :
 
-* SonarQube : Pour analyser la qualité et la lisibilité du code.
 * Codacy : Pour mesurer la qualité du code.
 * Joular : Pour évaluer la consommation en ressources des algorithmes.
 
@@ -36,7 +36,7 @@ J'ai utilisé les outils suivants pour évaluer les algorithmes :
 | Utilisation de noms de variables descriptifs et pertinents pour améliorer la compréhension du code.
 
 | Grade qualité Codacy
-| Le grade de qualité de code évalué par Codacy allant de A(meilleur) à F(pire) 
+| Le grade de qualité de code mesuré par Codacy allant de A(meilleur) à F(pire) 
 |===
 
 === Algorithme 1 :  30simplicite.py en Python
@@ -57,7 +57,7 @@ Les fonctions sont bien séparées et de taille raisonnable.
 Les noms des variables sont très pertinants.
 
 *Grade qualité Codacy :* 5/6 
-Codacy a évalué le grade de qualité du code en grade B.
+Codacy a mesuré le grade de qualité du code en grade B.
 
 *Score Total pour Simplicité:* 28/31
 
@@ -79,7 +79,7 @@ Les fonctions sont bien séparées mais beaucoup de lignes qui pourrait etre sim
 Les noms des variables sont mélangés entre le français et l'anglais.
 
 *Grade qualité Codacy :* 6/6 
-Codacy a évalué le grade de qualité du code en grade A.
+Codacy a mesuré le grade de qualité du code en grade A.
 
 *Score Total pour Simplicité:* 22/31
 
@@ -100,7 +100,10 @@ Les fonctions sont bien séparées mais beaucoup de lignes pour une méthode
 *Nom de variable pertinant :* 4/5 
 Les noms des variables sont assez pertinant.
 
-*Score Total pour Simplicité:* 13,5/25
+*Grade qualité Codacy :* 6/6 
+Codacy a mesuré le grade de qualité du code en grade A.
+
+*Score Total pour Simplicité:* 19,5/25
 
 
 === Algorithme 4 : 09simplicite.java en Java
@@ -124,15 +127,135 @@ Les fonctions sont bien séparées et le code des méthodes font une taille rais
 *Nom de variable pertinant :* 5/5 
 Les noms des variables sont très pertinant.
 
-*Score Total pour Simplicité:* 20/25
+*Grade qualité Codacy :* 5/6 
+Codacy a mesuré le grade de qualité du code en grade B.
+
+
+*Score Total pour Simplicité:* 25/31
 
 == Classement pour la catégorie Simplicité
 
 |=== 
-| **Algorithme**                          | **Rang**   | **Score Simplicité (0-20)** 
+| **Algorithme**                          | **Rang**   | **Score Simplicité (0-31)** 
 | 30simplicite.py en Python |    1er     | 28
-| 12simplicite.py en Python | 2ème        | 20
+| 12simplicite.py en Python | 2ème        | 25
 | 23simplicite.java en Java | 3ème       | 22
-| 64simplicite.java en Java | 4ème       | 13,5
+| 64simplicite.java en Java | 4ème       | 19,5
 | 09simplicite.java en Java | exclue | 0
 |===
+
+
+== Classement des algorithmes selon l'efficacité
+
+=== Critères d'Efficacité
+|===
+| **Critère** | **Description**
+
+| Complexité Algorithmique 
+| Analyse de la complexité algorithmique de l'algorithme.
+
+| Temps d'Exécution
+| Mesure du temps réel d'exécution sur différents jeux de données..
+
+| Comportement avec une longue chaine de caractère (avec l'algo recurcif )
+| L'algorithme doit avoir des performances acceptables lorsque la taille des données augmentent.
+
+|===
+
+=== Algorithme 1 : 65efficacite.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.13338 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024"
+
+*Comportement avec une longue chaine de caractère :*  671.55491 millisecondes avec le même texte et 25 itérations
+
+=== Algorithme 2 :  61efficacite.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.2725 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024"
+
+*Comportement avec une longue chaine de caractère :*  4.11716 millisecondes avec le même texte et 25 itérations
+
+=== Algorithme 3 :  50efficacite.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.17735 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024"
+
+*Comportement avec une longue chaine de caractère :* 676.72627 
+millisecondes avec le même texte et 25 itérations
+
+=== Algorithme 4 :  62efficacite.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.09223 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024"
+
+*Comportement avec une longue chaine de caractère :* 2.22158 
+millisecondes avec le même texte et 25 itérations
+
+=== Algorithme 5 :  34efficacite.c en C
+
+Programme exlcue du classement car la methode RLE avec itération ne marche pas elle n'est pas implémenté et unRLE également et unRLE avec itération aussi.
+
+|===
+| Algorithme | Rang | Temps d'Exécution Initial (ms) | Temps d'Exécution avec 25 itérations sur une longue chaîne (ms)
+
+| 62efficacite.java
+| 1er
+| 0.09223
+| 2.22158
+
+| 65efficacite.java
+| 2ème
+| 0.13338
+| 671.55491
+
+| 50efficacite.java
+| 3ème
+| 0.17735
+| 676.72627
+
+
+| 61efficacite.java
+| 4ème
+| 0.2725
+| 4.11716
+
+| 34efficacite.c
+| Exclue
+| 
+| 
+
+|===
+
+Analyse :
+
+Comme les algos avaient tous la même complexité algorithmique je les ai différencié par leur temps d'exécution. 
+
+* L'algorithme 62efficacite.java est le plus rapide pour le texte initial et reste relativement rapide même avec 25 itérations sur une longue chaîne.
+
+* L'algorithme 65efficacite.java a un temps d'exécution initial légèrement plus lent que 62efficacite.java mais devient beaucoup plus lent avec 25 itérations sur une longue chaîne.
+
+* L'algorithme 50efficacite.java est similaire à l'algorithme 65efficacite.java en termes de temps d'exécution initial et avec itérations.
+
+* L'algorithme 61efficacite.java est le plus lent parmi les quatre.
+
+* L'algorithme 34efficacite.c ne possédait que la méthode RLE je n'ai donc pas pu faire les tests 
+
+== Classement des algorithmes selon la sobriété
+
+=== Critères de Sobriété
+|===
+| **Critère** | **Description**
+
+| Complexité Algorithmique 
+| Analyse de la complexité algorithmique de l'algorithme.
+
+| Temps d'Exécution
+| Mesure du temps réel d'exécution sur différents jeux de données..
+
+| Comportement avec une longue chaine de caractère (avec l'algo recurcif )
+| L'algorithme doit avoir des performances acceptables lorsque la taille des données augmentent.
+
+|===
+
+=== Algorithme 1 :   53sobriete.java en Java
