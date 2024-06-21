@@ -1,0 +1,129 @@
+= Rapport d'Évaluation des Algorithmes
+:toc:
+:toc-title: Sommaire
+
+*Nom du Projet:* Classement des Algorithmes selon la Simplicité
+*Date:* 21 Juin 2024
+
+
+== Présentation des outils d'évaluation
+
+J'ai utilisé les outils suivants pour évaluer les algorithmes :
+
+* SonarQube : Pour analyser la qualité et la lisibilité du code.
+* Codacy : Pour mesurer la qualité du code.
+* Joular : Pour évaluer la consommation en ressources des algorithmes.
+
+== Classement des algorithmes selon la simplicité
+
+=== Critères de Simplicité
+|===
+| **Critère** | **Description**
+
+| Lisibilité du code
+| Facilité à comprendre ce que fait le code.
+
+| Utilisation de méthodes simples comme `length`
+| Utilisation des méthodes simples déjà utilisé en cours .
+
+| Documentation
+| Présence de commentaires et documentation du code + javadoc.
+
+| Taille des Fonctions/Classes
+| Longueur raisonnable des fonctions et des classes pour une meilleure maintenance.
+
+| Nom de variable pertinant
+| Utilisation de noms de variables descriptifs et pertinents pour améliorer la compréhension du code.
+|===
+
+=== Algorithme 1 :  30simplicite.py en Python
+
+*Lisibilité du code:* 4/5
+Le code était assez facile à comprendre et l'indentation est correcte.
+
+*Utilisation de méthodes simples comme `length` :* 5/5 
+Le code utilisait des méthodes déja vu en cours tel que len  
+
+*Documentation:* 4/5
+Il y a la présence de commentaires pertinants mais pas de "javadoc" pour expliquer la fonction
+
+*Taille des Fonctions/Classes:* 5/5
+Les fonctions sont bien séparées et de taille raisonnable.
+
+*Nom de variable pertinant :* 5/5 
+Les noms des variables sont très pertinants.
+
+*Score Total pour Simplicité:* 23/25
+
+=== Algorithme 2 : 23simplicite.java en Java
+
+*Lisibilité du code:* 3/5
+Le nom des méthodes RLE unRLE ont été changé et présence du main sinon le code se comprenait.
+
+*Utilisation de méthodes simples comme `length` :* 3/5 
+Le code utilisait des méthodes déja vu en cours mais aussi des méthode de `Character` qui je pense ne rendait pas le code plus simple   
+
+*Documentation:* 4/5
+Il y a la présence de commentaires pertinants mais pas de `javadoc` pour expliquer la fonction
+
+*Taille des Fonctions/Classes:* 3/5
+Les fonctions sont bien séparées mais beaucoup de lignes qui pourrait etre simplifié par exemple pour le if il refait un if en dessous alros qu'il pourrait utiliser || ou && .
+
+*Nom de variable pertinant :* 3/5 
+Les noms des variables sont mélangés entre le français et l'anglais.
+
+*Score Total pour Simplicité:* 16/25
+
+=== Algorithme 3 : 64simplicite.java en Java
+
+*Lisibilité du code:* 3/5
+Le code est bien indenté mais le manque de commentaire rend la comprehension difficile
+
+*Utilisation de méthodes simples comme `length` :* 3,5/5 
+Le code utilisait des méthodes déja vu en cours mais aussi des méthode de `StringBuilder` qu'on a pas vu en cours  
+
+*Documentation:* 0/5
+Il n'y a pas la présence de commentaires ni javadoc
+
+*Taille des Fonctions/Classes:* 3/5
+Les fonctions sont bien séparées mais beaucoup de lignes pour une méthode
+
+*Nom de variable pertinant :* 4/5 
+Les noms des variables sont assez pertinant.
+
+*Score Total pour Simplicité:* 13,5/25
+
+
+=== Algorithme 4 : 09simplicite.java en Java
+
+Programme exlcue du classement car la methode RLE avec itération ne marche pas elle n'est pas implémenté
+
+=== Algorithme 5 : 12simplicite.py en Python
+
+*Lisibilité du code:* 5/5
+Le code est bien indenté et facile à comprendre même sans commentaire
+
+*Utilisation de méthodes simples comme `length` :* 5/5 
+Le code utilisait des méthodes déja vu en cours.
+
+*Documentation:* 0/5
+Il n'y a pas la présence de commentaires ni javadoc
+
+*Taille des Fonctions/Classes:* 5/5
+Les fonctions sont bien séparées et le code des méthodes font une taille raisonable.
+
+*Nom de variable pertinant :* 5/5 
+Les noms des variables sont très pertinant.
+
+*Score Total pour Simplicité:* 20/25
+
+== Classement pour la catégorie Simplicité
+
+|=== 
+| **Algorithme**                          | **Rang**   | **Score Simplicité (0-20)** 
+| 30simplicite.py en Python |    1er     | 23
+| 12simplicite.py en Python | 2ème        | 20
+| 23simplicite.java en Java | 3ème       | 16
+| 64simplicite.java en Java | 4ème       | 13,5
+| 09simplicite.java en Java | exclue | 0
+|===
