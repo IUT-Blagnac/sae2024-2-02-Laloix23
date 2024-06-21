@@ -196,6 +196,8 @@ millisecondes avec le même texte et 25 itérations
 
 Programme exlcue du classement car la methode RLE avec itération ne marche pas elle n'est pas implémenté et unRLE également et unRLE avec itération aussi.
 
+== Classement pour la catégorie Efficacité
+
 |===
 | Algorithme | Rang | Temps d'Exécution Initial (ms) | Temps d'Exécution avec 25 itérations sur une longue chaîne (ms)
 
