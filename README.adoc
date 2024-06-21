@@ -174,8 +174,8 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 
 === Phase 2 (deadline : **vendredi 21 juin 2024** à minuit)
 
-* [ ] Le rapport d'évaluation des algorithmes (e.g., asciidoc ou PDF). Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
-* [ ] Les codes de test, d'évaluation ou de mesure. Ils doivent se trouver dans le répertoire `analyse` de votre dépôt.
+*  link:https://github.com/IUT-Blagnac/sae2024-2-02-Laloix23/blob/main/rapport/rapporteval.adoc[Rapport d'évaluation des algorithmes] Le rapport d'évaluation des algorithmes (e.g., asciidoc ou PDF). Pour chaque catégorie, vous devrez désigner qui est 1er, 2ème, 3ème, ... (avec possibilité d’ex-aequo si le hasard vous a attribué des algos similaires). Il doit se trouver dans le répertoire `rapport` de votre dépôt.
+* link:https://github.com/IUT-Blagnac/sae2024-2-02-Laloix23/tree/main/analyse[Les codes de test] Les codes de test, d'évaluation ou de mesure. Ils doivent se trouver dans le répertoire `analyse` de votre dépôt.
 * [ ] Les références des librairies/outils utilisés (pour ceux non fournis). Elles doivent être listées dans la sous-section (Références) ci-dessous.
 * [ ] La chaîne de compilation et exécutable, ou paquetage selon les standards du langage (comment exécuter vos codes d'évaluation). Cette description doit se trouver dans vos rapports.
 
@@ -183,22 +183,28 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 === Pré-requis
 
-Voici les pré-requis pour exécuter nos codes d'évaluation.
+Voici les pré-requis pour exécuter mes codes d'évaluation.
 
-- Java v.x.y.z
-- ...
+- Java 8
+- JDK 17
+- Python 3.12
 
 === Reproductibilité
+. Sur Codacy nous pouvons lier notre compte github et ensuite nous pouvons récuperer la mesure de qualité du code selon un Grade
 
-- Pour reproduire nos analyses :
-. Installez X
-. Lancez Y
-. ...
+- Pour reproduire mes analyses pour le code Java :
+. Mettre l'algorithme de ExecutionTester dans le même package que son algorithme
+. Puis exécuter l'algo et récupérer le temps d'execution de votre algorithme
+
+- Pour reproduire mes analyses pour le code Python
+. Ajouter le code Test de Python a la suite de l'algorithme python et exécuter, si il y a une erreur l'algorithme a echoué le passage des tests
+
+- Pour reproduire mes analyses pour le code C
+. Ajouter le code Test en C a la suite de l'algorithme en C et exécuter, si il y a une erreur l'algorithme a echoué le passage des tests
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
-- ...
+- link:https://www.codacy.com/[Codacy]
 
 == Généralités, notation de la SAÉ et résultat du concours
 
