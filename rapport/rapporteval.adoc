@@ -4,6 +4,8 @@
 
 *Nom du Projet:* Classement des Algorithmes selon la Simplicité
 
+*Auteur du classement :* Loïc PHRAKOUSONH
+
 *Date:* 21 Juin 2024
 
 
@@ -12,7 +14,6 @@
 J'ai utilisé les outils suivants pour évaluer les algorithmes :
 
 * Codacy : Pour mesurer la qualité du code.
-* Joular : Pour évaluer la consommation en ressources des algorithmes.
 
 == Classement des algorithmes selon la simplicité
 
@@ -255,9 +256,49 @@ Comme les algos avaient tous la même complexité algorithmique je les ai diffé
 | Temps d'Exécution
 | Mesure du temps réel d'exécution sur différents jeux de données..
 
-| Comportement avec une longue chaine de caractère (avec l'algo recurcif )
-| L'algorithme doit avoir des performances acceptables lorsque la taille des données augmentent.
+| 0.20144
+| Taille du fichier contenant le code source (en Ko) 
 
 |===
 
 === Algorithme 1 :   53sobriete.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.1292 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024" 2/3
+
+*Taille du fichier contenant le code source :* 4,08 Ko 1/3
+
+*Note :* 7/11  
+
+=== Algorithme 2 : 44sobriete.c en C
+
+L'algorithme ne compile pas 
+
+=== Algorithme 3 : 18sobriete.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.1505 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024" 1/3
+
+*Taille du fichier contenant le code source :* 1,91 Ko 3/3
+
+*Note :* 8/11  
+
+=== Algorithme 4 : 03sobriete.java en Java
+*Complexité Algorithmique :* 4/5 c'est une complexité totale O(n), où n est la longueur du texte. 
+
+*Temps d'Exécution :*  0.09773 millisecondes avec le texte : "SAE ALGORITHME DE LA SAE 2.02 de 2024" 3/3
+
+*Taille du fichier contenant le code source :* 3,71 Ko 2/3
+
+*Note :* 9/11  
+
+== Classement pour la catégorie Sobriété
+
+|=== 
+| **Algorithme**                          | **Rang**   | **Score Sobriété (0-11)** 
+| 03sobriete.java en Java |    1er     | 9
+| 18sobriete.java en Java | 2ème        | 8
+| 23simplicite.java en Java | 3ème       | 7
+| 53sobriete.java en Java | exclue      | 
+|===
+

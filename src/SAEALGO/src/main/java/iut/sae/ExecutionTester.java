@@ -6,7 +6,7 @@ public class ExecutionTester {
         long startTime = System.nanoTime();
 
         for(int i=0;i<10;i++)
-            Algo.RLE("SAE ALGORITHME DE LA SAE 2.02 de 2024");
+            MonAlgo.RLE("SAE ALGORITHME DE LA SAE 2.02 de 2024");
 
         long endTime = System.nanoTime();
         long duration = endTime - startTime;
@@ -19,7 +19,7 @@ public class ExecutionTester {
         long startTime2 = System.nanoTime();
 
         for(int i=0;i<10;i++)
-            Algo.RLE("SAE ALGORITHME DE LA SAE 2.02 de 2024", 25);
+            MonAlgo.RLE("SAE ALGORITHME DE LA SAE 2.02 de 2024", 25);
 
         long endTime2 = System.nanoTime();
         long duration2 = endTime2 - startTime2;
