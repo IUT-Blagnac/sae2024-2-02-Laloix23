@@ -1,38 +1,61 @@
-def RLE(chaine :str ) -> str:
-    nvlchaine = ""
-    cpt = 1
-    for i in range(len(chaine)):
-        if i<len(chaine)-1 and chaine[i] == chaine[i+1] and cpt<9: 
-            cpt=cpt+1
-        else :
-            nvlchaine = nvlchaine + str(cpt) + chaine[i]
-            cpt = 1
-    return nvlchaine
+
+def RLE(chaine):
+    if len(chaine) == 0:
+        return ""
+
+    resultat = ""
+    compteur = 1
+    premier_caractere = chaine[0]
+    longueur = len(chaine)
+
+    for i in range(1, longueur):
+        if chaine[i] == premier_caractere:
+            compteur += 1
+            if compteur == 9:
+                resultat += str(compteur) + premier_caractere
+                compteur = 0
+        else:
+            if compteur > 0:
+                resultat += str(compteur) + premier_caractere
+            premier_caractere = chaine[i]
+            compteur = 1
+
+    if compteur > 0:
+        resultat += str(compteur) + premier_caractere
+
+    return resultat
 
 
+def unRLE(chaine):
+    resultat = ""
+    i = 0
+    longueur = len(chaine)
 
-def RLEit(chaine :str, iteration:int) -> str:
-    if iteration != 1 :
-        nvlchaine = RLE(chaine)
-        return RLEit(nvlchaine,iteration-1)
-    return RLE(chaine)
-    
+    while i < longueur:
+        caractere = chaine[i]
 
+        if caractere.isdigit():
+            nombre = int(caractere)
+            caractere_suivant = chaine[i + 1]
+            resultat += nombre * caractere_suivant
+            i += 2
+        else:
+            resultat += caractere
+            i += 1
 
-def unRLE(chaine : str)->str:
-    nvlchaine = ""
-    for i in range(0,len(chaine),2):
-        nvlchaine = nvlchaine + int(chaine[i])*chaine[i+1]    
-    return nvlchaine
+    return resultat
 
+def unRLEit(chaine, iteration):
+    resultat = chaine
+    for i in range(iteration):
+        resultat = unRLE(resultat)
+    return resultat
 
-def unRLEit(chaine :str, iteration:int) -> str:
-    if iteration != 1 :
-        nvlchaine = unRLE(chaine)
-        return unRLEit(nvlchaine,iteration-1)
-    return unRLE(chaine)
-
-
+def RLEit(chaine, iteration):
+    resultat = chaine
+    for i in range(iteration):
+        resultat = RLE(resultat)
+    return resultat
 
 
 #TEST RLE 
@@ -101,3 +124,4 @@ assert unRLEit("111a111b111c111d", 2) == "abcd"
 assert RLEit("xxxxx", 2) == "151x"
 assert RLEit("abcd", 2) == "111a111b111c111d"
 print("===============\nTous mes tests sont passés.")
+

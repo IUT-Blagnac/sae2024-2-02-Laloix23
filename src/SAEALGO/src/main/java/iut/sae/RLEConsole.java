@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class RLEConsole{
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws AlgoException{
         String in="";
         
         if(args.length>0){
@@ -21,9 +21,9 @@ public class RLEConsole{
         }
 
         System.out.println("Entrée : "+in);
-        System.out.println("Sortie : "+ Algo.RLE(in)); 
+        System.out.println("Sortie : "+ MonAlgo.RLE(in)); 
 
-        System.out.println(Algo.unRLE("9W1B8W3B3W1B7W"));
+        System.out.println(MonAlgo.unRLE("9W1B8W3B3W1B7W"));
         
     }
 }
